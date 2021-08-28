@@ -674,7 +674,7 @@ kmsg2 "----"
 
 am start -a android.intent.action.MAIN -e toasttext "Applying some Xtra Tweaks..." -n mkadp.toast/.MainActivity
 
-fst=/data/adb/modules/butterlimitsforop7poos11uni/system/xbin/fstrim
+fst=/data/adb/modules/butterlimitsforop8poos11uni/system/xbin/fstrim
 
 $fst -v /data;
 $fst -v /system;
