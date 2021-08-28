@@ -9,9 +9,9 @@ BRANCH="Battery-Profile"
 
 am start -a android.intent.action.MAIN -e toasttext "Enabling ButterLimits-Battery. This can few minutes" -n mkadp.toast/.MainActivity
 
-$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/battery/module.prop /data/adb/modules/butterlimitsforop7poos11uni
-$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/gms/system/etc/sysconfig/power_profile_com.google.android.gm.xml /data/adb/modules/butterlimitsforop7poos11uni/system/etc/sysconfig/power_profile_com.google.android.gm.xml
-$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/gms/system/product/etc/sysconfig/google.xml /data/adb/modules/butterlimitsforop7poos11uni/system/product/etc/sysconfig/google.xml
+$BB cp -rf /data/adb/modules/butterlimitsforop8poos11uni/system/etc/mkadp/battery/module.prop /data/adb/modules/butterlimitsforop8poos11uni
+$BB cp -rf /data/adb/modules/butterlimitsforop8poos11uni/system/etc/mkadp/gms/system/etc/sysconfig/power_profile_com.google.android.gm.xml /data/adb/modules/butterlimitsforop8poos11uni/system/etc/sysconfig/power_profile_com.google.android.gm.xml
+$BB cp -rf /data/adb/modules/butterlimitsforop8poos11uni/system/etc/mkadp/gms/system/product/etc/sysconfig/google.xml /data/adb/modules/butterlimitsforop8poos11uni/system/product/etc/sysconfig/google.xml
 
 am start -a android.intent.action.MAIN -e toasttext "Setting Variables" -n mkadp.toast/.MainActivity
 
@@ -671,7 +671,7 @@ kmsg2 "----"
 kmsg2 "Let's do some fstrim tweak..."
 kmsg2 "----"
 
-fst=/data/adb/modules/butterlimitsforop7poos11uni/system/xbin/fstrim
+fst=/data/adb/modules/butterlimitsforop8poos11uni/system/xbin/fstrim
 
 $fst -v /data;
 $fst -v /system;
